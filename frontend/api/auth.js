@@ -1,5 +1,3 @@
-// import api from './axiosConfig.js';
-
 export const login = async (cpf, senha) => {
     try {
         return await axios.post('http://localhost:3000/api/auth/login', {

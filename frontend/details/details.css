@@ -91,6 +91,19 @@ header {
   border-color: #007bff;
 }
 
+.detail-item p{
+  text-align: left;
+}
+
+.detail-item-imagem{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+
+} 
+
 .imagens {
     width: 100%;
     display: flex;
@@ -106,11 +119,12 @@ header {
   border: 1px solid #333333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 80px !important;
-  height: 80px !important;
+  width: 200px !important;
+  height: 200px !important;
   border-radius: 15px;
   height: 10%;
   overflow: hidden;
+  margin: auto;
 }
 
 button {

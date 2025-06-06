@@ -75,6 +75,10 @@ async function renderizarRegistro(id) {
             <div id="form" class="details-container">
                 <div class="detail-item">
                     <h1>${item.titulo}</h1>
+                <div class="detail-item-imagem">
+                    <label>Imagem:</label>
+                    <img src="http://localhost:3000/uploads/${item.imagem}" alt="${item.titulo}" class="img">
+                </div>
                 </div>
                 <div class="detail-item">
                     <label for="status">Status:</label>
@@ -94,9 +98,11 @@ async function renderizarRegistro(id) {
                     <p>${item.data_criacao ? new Date(item.data_criacao).toLocaleDateString() : "Data não disponível"}</p>
                 </div>
                 <div class="detail-item">
-                    <label>Imagem:</label>
-                    <img src="http://localhost:3000/uploads/${item.imagem}" alt="${item.titulo}" class="img">
+                    <label>Localização</label>
+                    <p>${item.localizacao}</p>
                 </div>
+                
+
                 <div class="avaliacoes">
                     <h2>Avaliações</h2>
                     ${avaliacoesHTML}

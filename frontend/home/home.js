@@ -124,6 +124,7 @@ function renderizarRegistros(registros, container) {
         </div>
         <p>${registro.descricao}</p>
         <p>${registro.data_criacao ? new Date(registro.data_criacao).toLocaleDateString() : "Data não disponível"}</p>
+        <p>${registro.localizacao}</p>
         <a href="../details/details.html?id=${registro.id}" class="btn-detalhes">Conferir detalhes</a>
     </div>
 `;
