@@ -1,0 +1,321 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: #f0f0f0;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-inline: 6rem;
+    margin-bottom: 30px;
+}
+
+
+
+#bandeira-pompeia{
+    width: 4rem
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    color: #007bff;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lista-registros {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 28px 24px 20px 24px;
+  margin: 24px 12px;
+  width: 340px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.card a, .card button {
+  margin-top: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 60%;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+}
+
+.card a:hover, .card button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.ocorrencia-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.status {
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: #f5f5f5;
+  color: #888;
+  border: none;
+}
+
+.card-aguardando .status {
+  background: #fffbe6;
+  color: #d4c711;
+  border: 2px solid #d4c711;
+}
+
+.card-andamento .status {
+  background: #e6f0ff;
+  border: 2px solid #007bff;
+  color: #000;
+}
+
+.card-resolvido .status {
+  background: #e6ffe6;
+  color: #000;
+  border: 2px solid #28a745;
+}
+
+.card p {
+  color: #444;
+  font-size: 1rem;
+  margin: 0 0 6px 0;
+  word-break: break-word;
+}
+
+.card p:last-child {
+  color: #000;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.card-aguardando {
+  color: #d4c711;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.card-aguardando a {
+  border: 1px solid #d4c711;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-aguardando a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.card-andamento {
+  color: #007bff;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 2px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.card-andamento a {
+  border: 1px solid #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 60%  ;
+}
+
+.card-andamento a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.filters {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 25vw;
+}
+
+.filters:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filters button {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+  height: 100%;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.filtros {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+}
+
+.filter input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.filter input[type="text"]:hover {
+  border-color: #007bff;
+}
+
+.filter input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+
+.filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 150px;
+}
+
+.filter select:hover {
+  border-color: #007bff;
+}
+
+.filter select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.filter label {
+  font-weight: bold;
+  color: #333;
+}
+
+.filter input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 150px;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  width: 5rem;
+}
+
+.logout-btn:hover {
+  background-color: #333333;
+}

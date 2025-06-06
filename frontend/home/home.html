@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Conectando Cidadãos </title>
+    <link rel="shortcut icon" href="../assets/bandeira-pompeia.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="links" class="links">
+        </div>
+
+        <img src="../assets/bandeira-pompeia.png" id="bandeira-pompeia" alt="">
+        <button class="logout-btn" id="botao_de_sair"> Sair </button>
+
+    </header>
+    <div class="body-container">
+
+        <section class="filters"> 
+            <div class="filter">
+                <label for="search">Pesquisar:</label>
+                <input type="text" id="search" placeholder="Digite o termo de pesquisa">
+            </div>
+            <div class="filtros">
+            <div class="filter">
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="all">Todos</option>
+                    <option value="pending">Aguardando</option>
+                    <option value="Resolvido">Resolvido</option>
+                    <option value="em andamento">Em andamento</option>
+                </select>
+            </div>
+            
+            <div class="filter">
+                <label for="date">Data:</label>
+                <input type="date" id="date">
+            </div>
+           
+</div>
+            <button id="search-button" onclick="filtrarRegistros()">Buscar</button>
+        </section>
+    <section id="lista-registros" class="lista-registros">
+            <div class="card">
+                <div class="ocorrencia-stats">
+                <h3>Registro 1</h3>
+                <p class="status">Aguardando</p>
+                </div>
+                <p>Descrição do registro 1</p>
+                <p>xx/xx/xxxx</p>
+                <button>Conferir detalhes</button>
+            </div>
+            <div class="card">
+                <div class="ocorrencia-stats">
+                <h3>Registro 1</h3>
+                <p class="status">Resolvido</p>
+                </div>
+                <p>Descrição do registro 1</p>
+                <p>xx/xx/xxxx</p>
+                <button>Conferir detalhes</button>
+            </div>
+            <div class="card">
+                <div class="ocorrencia-stats">
+                <h3>Registro 1</h3>
+                <p class="status">Em andamento</p>
+                </div>
+                <p>Descrição do registro 1</p>
+                <p>xx/xx/xxxx</p>
+                <button>Conferir detalhes</button>
+            </div>
+        </section>
+    
+    </div>
+
+</body>
+
+<script type="module" src="home.js"></script>
+
+</html>

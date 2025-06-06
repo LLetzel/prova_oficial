@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectando Cidadãos</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form id="login-form" class="form-container">
+        <img src="../assets/pompeia-para-todos.png" alt="">
+
+        <h1>Cadastre-se</h1>
+
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fas fa-envelope"></i>
+            <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+        </div>
+
+        <button type="submit" class="Acessar">Cadastrar</button>
+        <p>Já tem uma conta? <a href="../login/login.html">Conecte sua conta</a></p>
+    </form>
+</body>
+
+<script type="module" src="cadastro.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
