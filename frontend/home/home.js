@@ -15,12 +15,18 @@ document.addEventListener("DOMContentLoaded", async function () {
             alert('Você não tem permissão para acessar essa página');
             window.location.href = '../login/login.html';
         }
+        const nomeDiv = document.getElementById("links");
+
+          nomeDiv.innerHTML += `
+            <p class="nome-header">Olá, ${payload.nome}</p>
+          `
+
+
     } catch {
         alert('Erro ao carregar dados');
         window.location.href = '../login/login.html'
     }
 
-    await renderizarNome();
     await carregarRegistros();
 
     document.getElementById("search-button").addEventListener("click", async (e) => {
@@ -34,22 +40,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             })
 });
 
-async function renderizarNome() {
-    try {
-          const payload = JSON.parse(atob(token.split('.')[1]));
-          if (!payload.nome) {
-            alert('nome nao encontrado!')
-          }
-          const nomeDiv = document.getElementById("links");
-
-          nomeDiv.innerHTML += `
-            <p class="status">${payload.nome}</p>
-          `
-
-    }   catch (error) {
-        console.error(error);
-    }
-}
 
 async function sair() {
     try {
